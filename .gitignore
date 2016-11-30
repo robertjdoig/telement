@@ -273,7 +273,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
-*.ini
 *.bin
 temple_of_elements/Saved/
 temple_of_elements/Intermediate/
