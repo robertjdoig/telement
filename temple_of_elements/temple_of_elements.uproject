@@ -2,15 +2,5 @@
 	"FileVersion": 3,
 	"EngineAssociation": "4.13",
 	"Category": "",
-	"Description": "",
-	"Modules": [
-		{
-			"Name": "temple_of_elements",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
-		}
-	]
+	"Description": ""
 }
