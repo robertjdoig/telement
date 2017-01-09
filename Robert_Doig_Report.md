@@ -21,7 +21,7 @@ On this project we had a lot of problems with version control due the unreal sav
 # Technical Explanation
 In this section I will explain the technical implementation of mechanics. The way that Matthew Duddington and I worked was very collaborative so that we both had input into how the blueprints functioned. We accomplished this using a Trello board (www.trello.com) where we created cards for each programming and design task. When we wanted to use a task we simply dragging it into "in progress" and tagged it with our name. This also was a great tool for the artists to create mechanic fixing tasks. This process was a constant working document but have a snapshot of the task board below.  
 
-![Snap Shot of Trello Task Board](blueprint_screenshots/trello_task_board.jpg)
+![Snap Shot of Trello Task Board](blueprint_screenshots/trello_task_board.JPG)
 
 ## Player Movement
 We decided to take the standard first person controller, which comes inside of the Unreal Engines starter pack, and modify it to suit are needs. The functionality that was mostly unchanged are listed below: 
@@ -43,7 +43,7 @@ For the players damage the built in Unreal event handler was used. As seen in th
 
 Please see the respawned section to see how that function is handled
 
-![Players Damage Function](blueprint_screenshots/player_blueprints/damage_function.jpg)
+![Players Damage Function](blueprint_screenshots/player_blueprints/damage_function.JPG)
 
 ###Water slippery movement sprint
 
@@ -55,17 +55,17 @@ The water hit function is called when anything hits the player. It works using t
         - Set the isWet timer 
         - Set the sprint state to slippery
 
-![The players water hit event](blueprint_screenshots/player_blueprints/water_hit_function.jpg)
+![The players water hit event](blueprint_screenshots/player_blueprints/water_hit_function.JPG)
 
 The players sprint is a simple input action which sets the sprint state to either sprinting or walking. However these two actions can not happen when the player is effected by water otherwise they can negate the effect of the water by pressing the sprint key. So the check 
 to see if player is slippery branches were added. 
 
-![Players sprint input](blueprint_screenshots/player_blueprints/sprint_input.jpg)
+![Players sprint input](blueprint_screenshots/player_blueprints/sprint_input.JPG)
 
 The last part of the player sprint is to set the max walk speed. This take the enum value and sets the speed accordingly. The slippery state is slightly different because it is disable when the timer reaches zero. 
 # state problems of doing it this way. Event tick happens everyframe which sets the speed of the player every frame instead of when the state change happens
 
- ![Players sprint input](blueprint_screenshots/player_blueprints/set_movement_speed.jpg)
+ ![Players sprint input](blueprint_screenshots/player_blueprints/set_movement_speed.JPG)
 
 
 ###Changing between different gun modes 
@@ -76,10 +76,10 @@ The last part of the player sprint is to set the max walk speed. This take the e
 The players hit event was initially a very long chain of nodes which was not clear. We added a function for each of the object that we wanted to perform a task. It has a very simple chain of functions. However if in future improvements to this function I would use the custom event function which allows the separation of these functions. The objects would just use the function CastToFirstPersonController and call the custom event like the pick up health potion blueprint. 
 
 The player hit function chain 
- ![Player Hit Events](blueprint_screenshots/player_blueprints/player_hit_events.jpg)
+ ![Player Hit Events](blueprint_screenshots/player_blueprints/player_hit_events.JPG)
 
 Any example of one of hit functions.
-![The players water hit event](blueprint_screenshots/player_blueprints/water_hit_function.jpg)
+![The players water hit event](blueprint_screenshots/player_blueprints/water_hit_function.JPG)
 
 ## Technical UI Setup
 The way that Unreal handles the UI is by blinding a variable in the inspector to a get variable function. This allows any of the variables with in the player to be accessed and used as a text display or a visual indication of an event. 
@@ -88,7 +88,7 @@ The way that Unreal handles the UI is by blinding a variable in the inspector to
 
 The elemental spawner just fire spawn a projectile which then is destroyed on contacted with another object. This would be optimised by having a buffer of projectiles that would be disabled on and reset on contact. Initially the spawners were using the event tick function which meant that it would perform the spawn action every frame of the game. Matthew updated the blueprint so that it would run on event begin so it only needs to be called once and keep a track off its delay timer. 
 
-![Player Hit Events](blueprint_screenshots/spawner_objects/spawner_blueprint_example.jpg)
+![Player Hit Events](blueprint_screenshots/spawner_objects/spawner_blueprint_example.JPG)
 
 ## Pick ups
 
