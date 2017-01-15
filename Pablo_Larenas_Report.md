@@ -1,13 +1,13 @@
 # Introduction to Programming 2016 - Assignment 2  
-**Pablo Larenas**  
-** GAME LINK IN YOUTUBE:** 
+**PABLO LARENAS**  
+**Designer**  
+*January 2017*
 
-
-#OVERALL
+#THE PROJECT
 
 The game concept is play with a character chosen by the temple’s spirits to protect the ancient ruins and its relics from a coming menace. In the game the player control that character from a First Person perspective.
 In this prototype, the player can play a demo version in which he can explore an introductory temple level, experimenting the key mechanics, to test and, therefore, validate several design aspects of it, such as puzzles, obstacles, UI and art (lights, atmosphere and aesthetics).
-In this version of the game we currently have water, fire and air. With each element, the player can either absorb or cast the element from a mystical glove gun, activating or deactivating several triggerable objects to solve the puzzles. 
+In this version of the game (Demo) we currently have water, fire and air. With each element, the player can either absorb or cast the element from a mystical glove gun, activating or deactivating several triggerable objects to solve the puzzles. 
 
 #ACTIVITIES AS LEAD/TECHNICAL ARTIST
 
@@ -54,14 +54,14 @@ The lever included an overlapping triggerable interaction and an Input key to ac
 Considering overlapping a collision box as main interaction. The elevator movement was initially mad as a matinee actor, but due its lack of precision and customization as a blueprint, I changed the movement to a timeline applying a vector value to the Z axis.  
   
 ![alt text](blueprint_screenshots/Pablo/Elevator_BP.png)
-*basic lever Blueprint*  
+*basic elevator Blueprint*  
 
 **BASIC SPIKES AND MOVING WALLS**  
 
 I designed a basic BP before having a damage system. Just the movement to test the size and shape of the assets. Due this initial blueprint I could realize about the scale of those assets and their effect in game, being able to change them in an early stage.  
   
   ![alt text](blueprint_screenshots/Pablo/Spikes_BP.png)
-*Blueprint for movin spikes used in early stages of the project*    
+*Blueprint for moving spikes used on early stages of the project*    
 
 **ROLLING BALL**  
 
