@@ -119,7 +119,7 @@ The visual aspect of the blueprints facilitates my job as artist allowing me to 
 *Screenshot of edition made in a Heart blueprint, adding sounds and editing timeline animation*    
 ![alt text](blueprint_screenshots/Pablo/heart_pot.png)
 *A bluerpint cretaed to release a heart element from a destructible bottle asset*    
-![alt text](blueprint_screenshots/Pablo/lava.png)
+![alt text](blueprint_screenshots/Pablo/lava.png)  
 *Edition of the parameters of a water block to generate damage*    
 
 
