@@ -36,6 +36,9 @@ All these blueprints were perfected by Matthew and Robert when the interaction a
 
 The lever included an overlapping triggerable interaction and an Input key to activate the movement. Depending of the lever status (Boolean) the timeline can play or reverse, enabling the player up and down. The lever was changed later by an automatic one to facilitate the gameplay.  
 
+![alt text](blueprint_screenshots/Pablo/Lever_BP.png)
+*Lever Blueprint*  
+
 **BASIC ELEVATOR**  
 
 Considering overlapping a collision box as main interaction. The elevator movement was initially mad as a matinee actor, but due its lack of precision and customization as a blueprint, I changed the movement to a timeline applying a vector value to the Z axis.  
@@ -63,6 +66,17 @@ As artist, I applied some material BP techniques, using masks and glowing materi
 
 **EDITING EXISTING BLUEPRINTS**  
 
-Through several game test instances I must edit different parameters of several adding or subtracting delay time, creating variables to activate or deactivate UI elements, add and edit animation timelines, changing damage made by objects, speedof moving objects etc. The visual aspect of the blueprints facilitate my job as lead artist allowing me to easily edit those parameters without breaking the code.
+Through several game test instances I must edit different parameters of several exiting BP:
+- Add or subtract delay time to spawners and UI effects
+- Create variables in FPCB to activate or deactivate UI elements.
+- Add and edit animation timelines of Hearts, spikes and levers. 
+- Change damage made by objects (spikes, lava, spawners)
+- Increase or decrease speed of spikes, spawners, player.
+- change triggerable parameters of levers and doors. 
+- Edit gun appearance and triggerable objects meshes and materials.  
+- Change material textures and effects.
+
+The visual aspect of the blueprints facilitates my job as artist allowing me to easily edit those parameters without breaking the code. 
+
    
 
