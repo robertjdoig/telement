@@ -23,8 +23,18 @@ Through the process, I worked very close with Matthew and Robert, who helped me 
 
 Finally, as part of my documentation activities, I worked with Matthew in the video and presentation production.
 
-![alt text](https://github.com/Pablolarenas/octet/blob/master/octet/assets/diamonds/idea_images/IMG-20161008-WA0000.jpg)
-*Picture of the initial idea in the board*  
+![alt text](blueprint_screenshots/Pablo/p_04.png)
+*Lever Blueprint*  
+![alt text](blueprint_screenshots/Pablo/p_05.png)
+*Lever Blueprint*  
+![alt text](blueprint_screenshots/Pablo/p_06.png)
+*Lever Blueprint*  
+![alt text](blueprint_screenshots/Pablo/p_1.png)
+*Lever Blueprint* 
+![alt text](blueprint_screenshots/Pablo/p_02.png)
+*Lever Blueprint* 
+![alt text](blueprint_screenshots/Pablo/p_03.png)
+*Lever Blueprint* 
 
 
 #WORKING WITH BLUEPRINTS
@@ -42,27 +52,57 @@ The lever included an overlapping triggerable interaction and an Input key to ac
 **BASIC ELEVATOR**  
 
 Considering overlapping a collision box as main interaction. The elevator movement was initially mad as a matinee actor, but due its lack of precision and customization as a blueprint, I changed the movement to a timeline applying a vector value to the Z axis.  
+  
+![alt text](blueprint_screenshots/Pablo/Elevator_BP.png)
+*Lever Blueprint*  
 
 **BASIC SPIKES AND MOVING WALLS**  
 
 I designed a basic BP before having a damage system. Just the movement to test the size and shape of the assets. Due this initial blueprint I could realize about the scale of those assets and their effect in game, being able to change them in an early stage.  
+  
+  ![alt text](blueprint_screenshots/Pablo/Spikes_BP.png)
+*Lever Blueprint*    
 
 **ROLLING BALL**  
 
 I also applied a Rolling ball in the first level design, applying physics to a sphere primitive mesh. As an exercise, the rolling ball allowed me to test the scale of the hallways and, therefore, edit some parameters of the room meshes. 
 In the final version of the prototype, we include rolling balls but using a different technique (time line with two axis). Although the balls don’t roll as physical objects, we could control their movement with the timeline.  
+  
+  ![alt text](blueprint_screenshots/Pablo/whitebox.png)
+*Lever Blueprint*    
 
 **UI DESIGN**  
 Besides the graphic design aspects, the UI was also worked with bindings to the First Person Character Blueprint (FPCB). 
 As the FPCB controls ammo, player movements and gun, I created several Booleans to activate or deactivate the graphic interface in the UI graphs. Using these simple bindings, I enabled a Quest Log with two quests which updates themselves separately, an indicator of the selected type of ammo, indicators when player switch element, damage frame effect (blood), and controls in the tutorial room. Additionally, I edited the previous progress bar (heath and stamina) made by Robert, applying graphic assets and editing some of their parameters. Similarly I edited the Damage of spikes and spawners in their respective blueprints to balance the game experience.  
+  
+  ![alt text](blueprint_screenshots/Pablo/UI_1.png)
+*Lever Blueprint*  
+  ![alt text](blueprint_screenshots/Pablo/UI_2.png)
+*Lever Blueprint*  
+  ![alt text](blueprint_screenshots/Pablo/UI_3.png)
+*Lever Blueprint*  
+  ![alt text](blueprint_screenshots/Pablo/UI_4.png)
+*Lever Blueprint*  
+  ![alt text](blueprint_screenshots/Pablo/UI_5.png)
+*Lever Blueprint*  
+  ![alt text](blueprint_screenshots/Pablo/UI_6.png)
+*Lever Blueprint*  
 
 **BASIC PLAYER CONTROLS**  
 
 To set and iterate with the dungeon kit assets in Unreal, I created a First Person Character camera-based controls. This basic control were then replaced with a more complex BP.  
+  
+  ![alt text](blueprint_screenshots/Pablo/FPC_BP.png)
+*Lever Blueprint*    
 
 **MATERIALS**  
 
 As artist, I applied some material BP techniques, using masks and glowing materials. The graph view allowed me to easily iterate between textures and effects. 
+   
+![alt text](blueprint_screenshots/Pablo/material.png)
+*Lever Blueprint*    
+![alt text](blueprint_screenshots/Pablo/material_02.png)
+*Lever Blueprint*  
 
 **EDITING EXISTING BLUEPRINTS**  
 
@@ -77,6 +117,13 @@ Through several game test instances I must edit different parameters of several 
 - Change material textures and effects.
 
 The visual aspect of the blueprints facilitates my job as artist allowing me to easily edit those parameters without breaking the code. 
+  
+![alt text](blueprint_screenshots/Pablo/heart.png)
+*Lever Blueprint*    
+![alt text](blueprint_screenshots/Pablo/heart_pot.png)
+*Lever Blueprint*    
+![alt text](blueprint_screenshots/Pablo/lava.png)
+*Lever Blueprint*    
 
-   
+
 
