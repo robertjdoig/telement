@@ -2,14 +2,11 @@
 
 # Team
 
-Pablo Artist (Level Design, 3D modelling, UI design, sound design)  
-
-Eloise Artist (Materials, 3D modelling)  
-
-Max Artist (3D modelling)
+Pablo Larenas (Level Design, 3D modelling, UI design, sound design)  
+Eloise Calandre (Materials, 3D modelling)  
+Max Ring (3D modelling)
 
 Matthew Programmer (Components Creation, Level design, voice acting)  
-
 Robert Programmer (Components Creation, sound design)
 
 **Video Link:**
