@@ -13,8 +13,9 @@ Max Ring
 Robert Doig  
 Matthew Duddington  
 
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Team_format.png "Team roles")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Team_format.png "Team roles")  
 
+--------------------------------------------------------------------------------
 ## Aims
 ### Group
 
@@ -37,6 +38,7 @@ Matthew Duddington
 - Increase my understanding of level design principles from a technical standpoint.  
 
 
+--------------------------------------------------------------------------------
 ## Design Overview
 ### Deciding on the Game Format - 'Telement'
 
@@ -48,6 +50,7 @@ This direction also enabled the group to easily define initial divisions of labo
 
 The project is thus building a *"Temple of Elements"*, hence the so-called working title of *'Telement'*.  
 
+
 ### General Mechanics
 
 - Manipulate elements to solve physics, sequence and resource management based puzzles.  
@@ -57,6 +60,7 @@ The project is thus building a *"Temple of Elements"*, hence the so-called worki
 - Fire lights and extinguishes objects (such as torches and braziers) as well as destroying breakable objects which form barriers or contain resource items such as health or generic crystals.  
 - Water raises and lowers the height of pools around the level, upon which platforms float. There are also water spawners which create 'slippery' puddles that enable to player to run very fast for a short period of time - enabling them to launch over wide gaps or bypass fast moving obstacles. 
 
+--------------------------------------------------------------------------------
 ## Production Overview
 
 ### Communication
@@ -80,9 +84,9 @@ The team was keep to simulate, as far as practical, a working example of a indus
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2017_01_09_B.jpg "Remaining tasks / bug fixes Jan 2017")
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2017_01_10_A.jpg "Remaining tasks / bug fixes Jan 2017")  
 
-To keep track of core tasks progress we used digital post-it-notes via Trello (trello.com). This was extreamly useful in helping us keep track of each others progress over the weeks when different members of the team were unable to be in the university lab space at the same time.  
+To keep track of core tasks progress we used digital post-it-notes via Trello (trello.com). This was extremely useful in helping us keep track of each others progress over the weeks when different members of the team were unable to be in the university lab space at the same time.  
 
-Robert and I also used this to flag or 'check out' certain Blueprints (such as the First Person Character) that were tied into multiple tasks. We needed to develop this system as using Unreal with GitHub involved commiting binary files, rather than easily mergeable ascii text, and so we had to be very careful to  avoid overwrighting each other's work.  
+Robert and I also used this to flag or 'check out' certain Blueprints (such as the First Person Character) that were tied into multiple tasks. We needed to develop this system as using Unreal with GitHub involved committing binary files, rather than easily mergeable ascii text, and so we had to be very careful to  avoid overwriting each other's work.  
 
 Trello also empowered the artists to leave simple bug reports and see them being picked up by Robert and myself when we tagged it with our name and moved it to an in progress column. It also provided a simple per-issue discussion thread for followup questions etc.  
 
@@ -91,18 +95,18 @@ Trello also empowered the artists to leave simple bug reports and see them being
 
 ### My Role
 
-As someone with a background in design, we found that I was well suited to filling a kind of hybrid role in the team. I worked extensivly with both Robert and Pablo to solve different sides of related tasks.
+As someone with a background in design, we found that I was well suited to filling a kind of hybrid role in the team. I worked extensively with both Robert and Pablo to solve different sides of related tasks.
 
-Robert and I worked in a highly colaborative pattern, initially we had several sessions where we worked simultainously on more complex blueprints - this was crucial to our unpicking and self-learning of the Unreal Blueprint system. We were often able to 'fill in the blanks' for areas we had independently discovered while expeimenting on our own smaller tasks. During later stages we would often consult or 'Rubber Duck' for each other while jointly working in the university lab. Many of the Blueprints have traces of each of us establishing, augmenting or debugging functionailty.
+Robert and I worked in a highly collaborative pattern, initially we had several sessions where we worked simultaneously on more complex blueprints - this was crucial to our unpicking and self-learning of the Unreal Blueprint system. We were often able to 'fill in the blanks' for areas we had independently discovered while experimenting on our own smaller tasks. During later stages we would often consult or 'Rubber Duck' for each other while jointly working in the university lab. Many of the Blueprints have traces of each of us establishing, augmenting or debugging functionality.
 
-In several cases, Robert and I would also be assisting Pablo to understand how to ammend of finish a particular Blueprint he was constructing. I also spent time breaking down the construction of Blueprints and using timeline nodes with Max. Through this process he was able to learn how to construct the triggerable bridge that self assembles and to sequence the lighting of various torches.
+In several cases, Robert and I would also be assisting Pablo to understand how to amend of finish a particular Blueprint he was constructing. I also spent time breaking down the construction of Blueprints and using timeline nodes with Max. Through this process he was able to learn how to construct the triggerable bridge that self assembles and to sequence the lighting of various torches.
 
-My work with Pablo initially was focused on high level design. Feasibility and project planning were consistantly part of our thought cycle and so there was significant interplay of our pool of design and technical knowledge. Later in the project I would collaborate with Pablo on the level design, often mocking up a quick build of a Blueprint feature so that we could test out an idea on the fly.
+My work with Pablo initially was focused on high level design. Feasibility and project planning were consistently part of our thought cycle and so there was significant interplay of our pool of design and technical knowledge. Later in the project I would collaborate with Pablo on the level design, often mocking up a quick build of a Blueprint feature so that we could test out an idea on the fly.
 
-
+--------------------------------------------------------------------------------
 ## Technical Overview
 
-As has been mentioned, the Blueprint system was new to all of the members of the team. Consequently, the ambitiousness of our project had to be controlled within the scope of what were able to achieve. This visual programming system used within Unreal brought with it a number of notable benifits and problems:
+As has been mentioned, the Blueprint system was new to all of the members of the team. Consequently, the ambitiousness of our project had to be controlled within the scope of what were able to achieve. This visual programming system used within Unreal brought with it a number of notable benefits and problems:
 
 ***Pros***  
 - Easy for the artists to pick up in comparison to the abstract and syntax barrier of code.  
@@ -117,7 +121,7 @@ As has been mentioned, the Blueprint system was new to all of the members of the
   - Some strange names such as Branch for an If statement.  
   - The settings for a node or variable are often hidden in side menus or non obvious sub windows - so a challenge for the programmers to locate when they know it 'should be here somewhere', becomes an oblivious option to the artists.  
 
-- Most variables are public by default making unencapsulated code attractive in the moment (particularly as encapsulated BPs are considerably harder to write)  
+- Most variables are public by default making un-encapsulated code attractive in the moment (particularly as encapsulated BPs are considerably harder to write)  
   - Clunkyness preventing easy encapsulation leads to artists making duplicate blueprints for minor changes in BP behaviour. As each blueprint is essentially it's own class, this leads to many many headaches when checking types, changing shared functions, defining  variables of a specific class instance etc.  
 
 - Just getting a thing working at the start left us with a legacy of early blueprints that were substandard. We refactored important ones as and when we had time, but there are still some remaining. (Give example)  
@@ -130,11 +134,11 @@ As has been mentioned, the Blueprint system was new to all of the members of the
 Within this section I will display a selection of the most important Blueprints that I worked on and a brief summery of their function.
  
 ### Triggerable objects / Triggers
-The triggerable object class was one of the most interesting, functional and essential to our colaboaration with the MA students on our team, of all my blueprint work.
+The triggerable object class was one of the most interesting, functional and essential to our collaboration with the MA students on our team, of all my blueprint work.
 
-The base class has only one function header the 'Triggerable Event'. But by inheriting this function the class abstracted each triggerable object's behaviour into a single common call that could be made by any corisponding trigger. i.e. A lever trigger, does not need to know what will happen when it calls the triggerable event on its array of triggerable objects, nor does it need to even know what type of triggerable object they are.
+The base class has only one function header the 'Triggerable Event'. But by inheriting this function the class abstracted each triggerable object's behaviour into a single common call that could be made by any corresponding trigger. i.e. A lever trigger, does not need to know what will happen when it calls the triggerable event on its array of triggerable objects, nor does it need to even know what type of triggerable object they are.
 
-This trigger - triggerable pairing meant that the artists had a variety of objects to mix and match to form reletivly sophisticated puzzles from the kit of objects at their disposal and required less programmer assistance to make functional each new gameplay puzzle idea. 
+This trigger - triggerable pairing meant that the artists had a variety of objects to mix and match to form relatively sophisticated puzzles from the kit of objects at their disposal and required less programmer assistance to make functional each new gameplay puzzle idea. 
 
 *A range of triggerable object Blueprints available to the artists*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20event.PNG "Triggerable event")
@@ -165,7 +169,7 @@ Working as both a trigger and a triggerable object, the torch can run the trigge
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20EDIT.PNG "Storytelling custom Blueprint for tutorial room")
 
 ### First Person Character
-Robert initially modified the standard first person controller from the Unreal starter pack, maintaining basic movement and camera control. Following this we regually worked in tandum on various functions, this became our most complex Blueprint with a variety of functions growing within it. I will describe the most interesting examples for which I had significant responcibility:  
+Robert initially modified the standard first person controller from the Unreal starter pack, maintaining basic movement and camera control. Following this we regularly worked in tandem on various functions, this became our most complex Blueprint with a variety of functions growing within it. I will describe the most interesting examples for which I had significant responsibility:  
 
 **Add / subtract element system**  
 This section of the Blueprint underwent significant revisions and additions over the course of the project. Evolving as the requirements for our players interactions and capabilities were modified.  
@@ -180,30 +184,30 @@ This section of the Blueprint underwent significant revisions and additions over
 >- Takes input from the LMB.  
 - Checks for the cooldown having ended.  
 - Uses Robert's projectile position function to calculate the spawn offset.  
-- Determins the element type that the player has active.  
+- Determines the element type that the player has active.  
 - Checks that the player has at least one filled crystals to use the power.  
-- Examins what the raycaster has hit and whether it is tagged to react with that element.  
+- Examines what the raycaster has hit and whether it is tagged to react with that element.  
 - Spawns the element.  
   - For *Air* it creates a collisionless visual and calls the floating platform movement code which checks the position of the block in a column and, if there is space to move, runs a timeline based animation to change its position.  
   - For *Fire* and *Water* a physical projectile is propelled forwards and reports back on whether it has his a valid Fire/Water tagged object. (Water has a grace of three bounces in order to make avoiding the platforms easier)  
 - Removes a crystal of that element type from the player's stock.  
-- Plays the relevent element sound.  
-- Finally a short cooldown is set to prevent acidental spamming of the power.  
+- Plays the relevant element sound.  
+- Finally a short cooldown is set to prevent accidental spamming of the power.  
 
 ***Subtract element***  
 >- Takes input from RMB.
 - Checks for the cooldown having ended.  
 - Uses Robert's projectile position function to calculate the spawn offset.
-- Examins what the raycaster has hit and what element it is tagged to react with.  
+- Examines what the raycaster has hit and what element it is tagged to react with.  
 - If not already active, the active element type is automatically switched (an important user centric behaviour).
 - Checks that the player has at least one empty generic crystal and removes it.
-- Removes a gneric crystal from the player's stock.
+- Removes a generic crystal from the player's stock.
 - Calls the individualised element reactions either by applying a typed amount of token damage or with a specific function.
 - Spawns the visible and audio components of the effect.
-- Adds a new crystal to the player's stock of the relevent type.
-- Finally a short cooldown is set to prevent acidental spamming of the power. 
+- Adds a new crystal to the player's stock of the relevant type.
+- Finally a short cooldown is set to prevent accidental spamming of the power. 
 
-In the case of both the Add and Subtract, with further development of the project, some of the shared behaviours on each element's path could be wrapped up into seperate function graphs to avoid duplication (such as the crystal array incrementing and decrementing).
+In the case of both the Add and Subtract, with further development of the project, some of the shared behaviours on each element's path could be wrapped up into separate function graphs to avoid duplication (such as the crystal array incrementing and decrementing).
 
 **Aimed object detection**  
 Raycast function checks for collision with specifically tagged objects, informing the UI class of points of interest to display to the player informational graphics.  
@@ -220,7 +224,7 @@ Raycast function checks for collision with specifically tagged objects, informin
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Floating%20air%20block.PNG "Air element push and pull floating block")
 
 ### Wall spawners
-Refactoring Robert's timer functionailty from an overlapping call every frame to a delay timer coroutean style timed behaviour.  
+Refactoring Robert's timer functionality from an overlapping call every frame to a delay timer co-routine style timed behaviour.  
 
 *Original spawner timer*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Original%20spawner%20timer.PNG "Original spawner timer")
@@ -228,7 +232,7 @@ Refactoring Robert's timer functionailty from an overlapping call every frame to
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Refactor%20spawn%20timer.PNG "Refactored spawner timer")
 
 ### Water block
-A translucent cuboid which ignores collisions with the player but produces a physical force upon the 'floating blocks' Blueprint. When it detects a 'hit' collision from the water element projectile the scale of the block increased over a period of time using a timeline node to animate the transformation over a number of frames. The reverse behaviour is performed with a succesful raycast during a water subtract attempt by the player.  
+A translucent cuboid which ignores collisions with the player but produces a physical force upon the 'floating blocks' Blueprint. When it detects a 'hit' collision from the water element projectile the scale of the block increased over a period of time using a timeline node to animate the transformation over a number of frames. The reverse behaviour is performed with a successful raycast during a water subtract attempt by the player.  
 
 The image below shows the set of nodes which enable water to be added. This Blueprint originally made use of tics and a boolian check in order to drive the gradual change of scale, however, this was refactored to use the timeline node which made the transformation much more stable and predictable.  
 
