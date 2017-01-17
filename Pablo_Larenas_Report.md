@@ -117,7 +117,7 @@ Through several game test instances I edited different of almost all exiting BP 
 
 The visual aspect of the blueprints facilitates my job as artist allowing me to easily edit those parameters without breaking the code. ON the other hand, my knowledge of c++ allowed me to read the components relations and attempt to design my own bluerpint solutions to specific programmatic issues. 
 
-Overall, I was able to manage several key aspects the project, from a wide and high view position, but at the same time, easily move across its levels undesrtanding the workflow, techincal boundries and challenges. Working with this technology allowed me to take the inictiative and start building my own testing instances in severals plavces of the level, and subsequentely, experience an agile design and iteration process. 
+Overall, I was able to manage several key aspects the project, from a strategic and leadership position, but at the same time, easily move across its levels undesrtanding the workflow, techincal boundries and challenges related to our context. In this sense, working with this technology allowed me to take the inictiative and start building my own testing instances in severals places of the level, and subsequentely, experience an agile design and iteration process. Similiarly, I had the chance to help Matthew and Roberto to solve some minor BP issues, saving production time and energy to finish this project in the original deadline.  
   
 ![alt text](blueprint_screenshots/Pablo/heart.png)
 *Screenshot of edition made in a Heart blueprint, adding sounds and editing timeline animation*    
