@@ -124,7 +124,7 @@ As has been mentioned, the Blueprint system was new to all of the members of the
 - Most variables are public by default making un-encapsulated code attractive in the moment (particularly as encapsulated BPs are considerably harder to write)  
   - Clunkyness preventing easy encapsulation leads to artists making duplicate blueprints for minor changes in BP behaviour. As each blueprint is essentially it's own class, this leads to many many headaches when checking types, changing shared functions, defining  variables of a specific class instance etc.  
 
-- Just getting a thing working at the start left us with a legacy of early blueprints that were substandard. We refactored important ones as and when we had time, but there are still some remaining. (Give example)  
+- Just getting a thing working at the start left us with a legacy of early blueprints that were substandard. We refactored important ones as and when we had time, but there are still some remaining.  
   - The next 'cycle' if this were a long term development would definitely be a 'tock' stability focus, otherwise we would drown in 'patchwork fixes'.  
 
 - While using fewer instances of the same thing in a graph feels more intuitively correct, actually in practice it just leaves you with snaking wires and so it ends up better to replace these with multiple 'gets' to feed equivalent inputs - but this leaves more visual 'unit' clutter on the graph. A BP programmer has to decide which is the lesser of two evils, more nodes or more wire spaghetti. On the whole we found it was easier for someone else to read the code with repeated nodes but easier to modify without leaving overlooked variable instances with the single variables wired to multiple locations.  
