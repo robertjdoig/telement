@@ -12,16 +12,18 @@ In this version of the game (Demo) we currently have water, fire and air. With e
 #ACTIVITIES AS LEAD/TECHNICAL ARTIST
 
 My role consisted in managing both aesthetical and design criteria for the game, being responsible of the look and feel of it, and constantly working next to Matthew and Robert in the blueprint specifications, application and edition among the project. 
+One of the features of this prototype is its level of exceution, coherence and playability considerations. As Lead artist, my role consisted in manage a correct art implementation according with our scope, brief, game definitions, user considerations, deadline and resources and mostly important, its applicability in the engine and blueprint-base workflow. 
+
 In the first part I actively participated in the briefing process (game concept, scope and level design criteria definition) with the rest of the team, documenting all process and sketching several ideas for the game (traps, props, mechanics, etc) 
-During the pre-production stage, I modelled the dungeon kit used to prototype the level and created initial Blueprints for it.  
+During the pre-production stage, I modelled the modular dungeon kit used to prototype the level and created initial Blueprints for it.  
 
-In the production stage, I designed and modelled the final meshes for the game, and built the complete version of the temple level. In parallel, I supervised my artist colleagues work, giving them orientation to their respective activities (texture work and 3d modelling assistance).  
+In the production stage, I designed and modelled the final meshes for the game, and built the complete version of the temple level. In parallel, I supervised my artist colleagues work, giving them orientation to their respective activities (texture work and 3d modelling assistance).Additionally, I transform the meshes in to usable gaming ssets, editing their respective collision boxes, physics attributes, rendering parameters, etc, making shure they will be manipulated by all members of the team for prototype or blueprimt edition. 
 
-Additionally, I counted with the knowledge and assistance of Matthew to work in the redesign of many puzzles and aspect of the level design. Similarly, I worked with Robert designing and applying several sounds FX for the game.  
+Additionally, I intensivelly worked with Matthew to work in the design and iteration of many puzzles and aspect of the level design, resulting in a very interesting cross disciplinary design activity. Similarly, I worked with Robert designing and applying sounds FX for the game, instance where both edited and created a variate pallette of sounds, further implemented in blueprints and sound classes. 
 
-Through the process, I worked very close with Matthew and Robert, who helped me to resolve blueprints and logic issues, while I gave them design inputs to develop their BP as well. Similarly, as lead artist, I kept the project’s files in order and tracked progress of several check list of activities we made between several project’s phases.  
+Through the process, I worked very close with Matthew and Robert, who helped me to resolve blueprints and logic issues, while I gave them design inputs to develop their BP as well. In addition, I edited different Blueprints from player controls, triggerable, destructible, burneable and floating objects, hearts, spawners, particles effects, lights and materials, helping to maintain the balance in the game as a whole product (holistic view). Similarly, as lead artist, I kept the project’s files in order and tracked progress of several check list of activities we made between project’s phases.  
 
-Finally, as part of my documentation activities, I worked with Matthew in the video and presentation production.
+Finally, as part of my documentation activities, I worked in the video and presentation production.
 
 ![alt text](blueprint_screenshots/Pablo/p_04.png)
 *Whiteboard screenshots with initial trap and puzzle design made by the team*  
@@ -30,17 +32,16 @@ Finally, as part of my documentation activities, I worked with Matthew in the vi
 ![alt text](blueprint_screenshots/Pablo/p_06.png)
 *white box meshes used to design the first level rooms, hallways and obstacles*  
 ![alt text](blueprint_screenshots/Pablo/p_1.png)
-*final view in editor mode from intro room, lava pit and water key room*  
+*final view in editor mode from intro room, lava pit and water key room with blueprint actor on it* 
 ![alt text](blueprint_screenshots/Pablo/p_02.png)
-*final view in editor mode from two puzzle rooms: rolling balls and floating platforms* 
+*final view in editor mode from two puzzle rooms: rolling balls and floating platforms with blueprint actor on it* 
 ![alt text](blueprint_screenshots/Pablo/p_03.png)
-*final view in editor mode from two puzzle rooms: collapisng walls and lever + spikes* 
+*final view in editor mode from two puzzle rooms: collapisng walls and lever + spikes with blueprint actor on it* 
 
 
 #WORKING WITH BLUEPRINTS
 
-During the preproduction stage I created basic BP, using matinee actors for animations and basic triggers. The main idea was prototype basic interactions that could be understandable and used by programmers as a baseline. 
-All these blueprints were perfected by Matthew and Robert when the interaction and mechanic requirements became more complex.  
+During the preproduction stage I created the basic level Blueprints, using matinee actors for animations and basic triggers systems based on collapsing box overlapping and keyboard imputs. The main porpuse of these blueprints was prototype basic interactions that could reflext the main aspects of the level design, being understandable and usable by programmers as a baseline to develop more complex versions of them. 
 
 **BASIC LEVER**  
 
@@ -103,17 +104,20 @@ As artist, I applied some material BP techniques, using masks and glowing materi
 
 **EDITING EXISTING BLUEPRINTS**  
 
-Through several game test instances I must edit different parameters of several exiting BP:
-- Add or subtract delay time to spawners and UI effects
-- Create variables in FPCB to activate or deactivate UI elements.
-- Add and edit animation timelines of Hearts, spikes and levers. 
-- Change damage made by objects (spikes, lava, spawners)
-- Increase or decrease speed of spikes, spawners, player.
-- change triggerable parameters of levers and doors. 
-- Edit gun appearance and triggerable objects meshes and materials.  
-- Change material textures and effects.
+Through several game test instances I edited different of almost all exiting BP in the game. The common activities I used to check constantly to maintain the game balance were: 
 
-The visual aspect of the blueprints facilitates my job as artist allowing me to easily edit those parameters without breaking the code. 
+- Add or subtract delay time to spawners and UI effects 
+- Create variables in FPCB to activate or deactivate UI elements, to help the player moving arround and reinfornce some key interactions between the player and the evironment.
+- Add and edit animation timelines of Hearts, spikes and levers, to enhance both appearance and legibility.
+- Change damage made by objects (spikes, lava, spawners) to balance game difficulty. 
+- Increase or decrease speed of spikes, spawners, player to balance game difficulty. 
+- change triggerable parameters of levers and door to create more complex and challenging interactions between triggerable objets and triggers. 
+- Edit gun appearance and triggerable objects meshes, sounds, delay, speed and materials.  
+- Change material textures and effects to highlight some "cookie crumps trails" for the player.
+
+The visual aspect of the blueprints facilitates my job as artist allowing me to easily edit those parameters without breaking the code. ON the other hand, my knowledge of c++ allowed me to read the components relations and attempt to design my own bluerpint solutions to specific programmatic issues. 
+
+Overall, I was able to manage several key aspects the project, from a wide and high view position, but at the same time, easily move across its levels undesrtanding the workflow, techincal boundries and challenges. Working with this technology allowed me to take the inictiative and start building my own testing instances in severals plavces of the level, and subsequentely, experience an agile design and iteration process. 
   
 ![alt text](blueprint_screenshots/Pablo/heart.png)
 *Screenshot of edition made in a Heart blueprint, adding sounds and editing timeline animation*    
