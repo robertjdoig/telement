@@ -162,7 +162,7 @@ Working as both a trigger and a triggerable object, the torch can run the trigge
 
 ### Customised events for the Tutorial Room ###
 *Storytelling custom Blueprint for tutorial room*  
-https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20EDIT.PNG "Storytelling custom Blueprint for tutorial room")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20EDIT.PNG "Storytelling custom Blueprint for tutorial room")
 
 ### First Person Character
 Robert initially modified the standard first person controller from the Unreal starter pack, maintaining basic movement and camera control. Following this we regually worked in tandum on various functions, this became our most complex Blueprint with a variety of functions growing within it. I will describe the most interesting examples for which I had significant responcibility:  
