@@ -234,7 +234,7 @@ Refactoring Robert's timer functionality from an overlapping call every frame to
 ### Water block
 A translucent cuboid which ignores collisions with the player but produces a physical force upon the 'floating blocks' Blueprint. When it detects a 'hit' collision from the water element projectile the scale of the block increased over a period of time using a timeline node to animate the transformation over a number of frames. The reverse behaviour is performed with a successful raycast during a water subtract attempt by the player.  
 
-The image below shows the set of nodes which enable water to be added. This Blueprint originally made use of tics and a boolian check in order to drive the gradual change of scale, however, this was refactored to use the timeline node which made the transformation much more stable and predictable.  
+The image below shows the set of nodes which enable water to be added. This Blueprint originally made use of tics and a boolean check in order to drive the gradual change of scale, however, this was refactored to use the timeline node which made the transformation much more stable and predictable.  
 
 *Water block add water section of Blueprint*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Water%20IO%20Add.PNG "Water block Add water section of Blueprint")
