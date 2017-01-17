@@ -216,8 +216,8 @@ Raycast function checks for collision with specifically tagged objects, informin
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Moving%20walls.PNG "Moving trap wall")
 
 ### Floating Air Block
-![alt text]("")
-**  
+*Air element push and pull floating block*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Floating%20air%20block.PNG "Air element push and pull floating block")
 
 ### Wall spawners
 Refactoring Robert's timer functionailty from an overlapping call every frame to a delay timer coroutean style timed behaviour.  
@@ -236,5 +236,4 @@ The image below shows the set of nodes which enable water to be added. This Blue
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Water%20IO%20Add.PNG "Water block Add water section of Blueprint")
 
 ### Teleporter
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Teleporter.PNG "")
-**
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Teleporter.PNG "Teleporter Blueprint")
