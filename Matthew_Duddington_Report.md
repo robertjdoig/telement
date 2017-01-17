@@ -14,7 +14,6 @@ Robert Doig
 Matthew Duddington  
 
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Team_format.png "Team roles")
-*Team Roles*
 
 ## Aims
 ### Group
@@ -63,20 +62,23 @@ The project is thus building a *"Temple of Elements"*, hence the so-called worki
 ### Communication
 The team was keep to simulate, as far as practical, a working example of a industry small-team production approach. We held extensive design and planning meetings throughout early stages of the project (see sample whiteboard photos below) and then followed up on these with a mixture of in studio working days and remote conference calls / screen share programming and design sessions via Google Hangouts (hangouts.google.com).
 
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_11_11_A.jpg "White board designs Nov 2016")
+*White board designs Nov 2016*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_11_11_B.jpg "White board designs Nov 2016")
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_11_16_A.jpg "White board designs Nov 2016")
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_11_16_B.jpg "White board designs Nov 2016")
-*White board designs Nov 2016*  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_12_02_A.jpg "Sprint task identification Dec 2016")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_11_16_B.jpg "White board designs Nov 2016")  
+  
 *Sprint task identification Dec 2016*  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_12_14_A.jpg "Scheduling remaining project task types over Winter holidays Dec 2016")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_12_02_A.jpg "Sprint task identification Dec 2016")  
+  
 *Scheduling remaining project task types over Winter holidays Dec 2016*  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2017_01_04_A.jpg "Design technical amendments and game-mechanic refinements Jan 2017")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_12_14_A.jpg "Scheduling remaining project task types over Winter holidays Dec 2016")  
+  
 *Design technical amendments and game-mechanic refinements Jan 2017*   
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2017_01_09_B.jpg "Remaining tasks / bug fixes Jan 2017")
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2017_01_10_A.jpg "Remaining tasks / bug fixes Jan 2017")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2017_01_04_A.jpg "Design technical amendments and game-mechanic refinements Jan 2017")  
+  
 *Remaining tasks / bug fixes Jan 2017*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2017_01_09_B.jpg "Remaining tasks / bug fixes Jan 2017")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2017_01_10_A.jpg "Remaining tasks / bug fixes Jan 2017")  
 
 To keep track of core tasks progress we used digital post-it-notes via Trello (trello.com). This was extreamly useful in helping us keep track of each others progress over the weeks when different members of the team were unable to be in the university lab space at the same time.  
 
@@ -84,8 +86,8 @@ Robert and I also used this to flag or 'check out' certain Blueprints (such as t
 
 Trello also empowered the artists to leave simple bug reports and see them being picked up by Robert and myself when we tagged it with our name and moved it to an in progress column. It also provided a simple per-issue discussion thread for followup questions etc.  
 
+*Trello shared task list and progress board*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/trello_task_board.JPG "Trello shared task list and progress board")
-*Trello shared task list and progress board*
 
 ### My Role
 
@@ -134,39 +136,45 @@ The base class has only one function header the 'Triggerable Event'. But by inhe
 
 This trigger - triggerable pairing meant that the artists had a variety of objects to mix and match to form reletivly sophisticated puzzles from the kit of objects at their disposal and required less programmer assistance to make functional each new gameplay puzzle idea. 
 
+*A range of triggerable object Blueprints available to the artists*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20event.PNG "Triggerable event")
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20objects.PNG "A range of triggerable object Blueprints available to the artists")  
-*A range of triggerable object Blueprints available to the artists*
-
+  
+  
 ***Lever*** *(Trigger)*  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Early%20lever.PNG "Early example of the lever class")
 *Early example of the lever class*  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Lever.png "Lever class after refactoring and additional functionality")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Early%20lever.PNG "Early example of the lever class")
 *Lever class after refactoring and additional functionality*  
-
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Lever.png "Lever class after refactoring and additional functionality")
+  
+  
 ***Lightable torch / brazier*** *(Trigger & Triggerable)*  
 Working as both a trigger and a triggerable object, the torch can run the triggerable event on each object in either of two arrays attached to it - one for being lit and one for being extinguished. It can also be remotely lit / extinguished with the option to ignore array processing if the designer choses to do so. The torch can be set to switch to lit or unlit as the game loads, so that puzzles can be setup in specific combinations.  
 
+*Triggerable trigger torch and editor exposed array variables for artists*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20trigger%20torch%20vars.PNG "Triggerable trigger torch")
-*Triggerable trigger torch*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20trigger%20torch.PNG "Triggerable trigger torch")  
+
 
 ***Rising floor / door*** *(Triggerable)*  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20door.PNG "Triggerable door Blueprint")
 *Triggerable door Blueprint*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20door.PNG "Triggerable door Blueprint")  
 
 ### Customised events for the Tutorial Room ###
-https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20EDIT.PNG "Storytelling custom Blueprint for tutorial room")
 *Storytelling custom Blueprint for tutorial room*  
+https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20EDIT.PNG "Storytelling custom Blueprint for tutorial room")
 
 ### First Person Character
-Robert initially modified the standard first person controller from the Unreal starter pack, maintaining basic movement and camera control. Following this we regually worked in tandum on various functions, this became our most complex Blueprint with a variety of functions growing within it. I will describe the most interesting examples for which I had significant responcibility:
+Robert initially modified the standard first person controller from the Unreal starter pack, maintaining basic movement and camera control. Following this we regually worked in tandum on various functions, this became our most complex Blueprint with a variety of functions growing within it. I will describe the most interesting examples for which I had significant responcibility:  
 
 **Add / subtract element system**  
-This section of the Blueprint underwent significant revisions and additions over the course of the project. Evolving as the requirements for our players interactions and capabilities were modified.
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/player_blueprints/element_IO_earlier_version.png "Early version of the element IO system")
+This section of the Blueprint underwent significant revisions and additions over the course of the project. Evolving as the requirements for our players interactions and capabilities were modified.  
+
 *Early version of the element IO system*  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/player_blueprints/element_IO_final_version.PNG "Final version of element IO system")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/player_blueprints/element_IO_earlier_version.png "Early version of the element IO system")  
+
 *Final version of the element IO system*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/player_blueprints/element_IO_final_version.PNG "Final version of element IO system")  
 
 ***Add Element***  
 >- Takes input from the LMB.  
@@ -199,30 +207,33 @@ In the case of both the Add and Subtract, with further development of the projec
 
 **Aimed object detection**  
 Raycast function checks for collision with specifically tagged objects, informing the UI class of points of interest to display to the player informational graphics.  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Raycast%20check%20function.PNG "Raycast checking and resolution")
+
 *Raycast based checking and resolution*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Raycast%20check%20function.PNG "Raycast checking and resolution")
 
 ### Moving Trap Wall
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Moving%20walls.PNG "Moving trap wall")
 *Moving trap wall*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Moving%20walls.PNG "Moving trap wall")
 
 ### Floating Air Block
 ![alt text]("")
 **  
 
 ### Wall spawners
-Refactoring Robert's timer functionailty from an overlapping call every frame to a delay timer coroutean style timed behaviour.
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Original%20spawner%20timer.PNG "Original spawner timer")
+Refactoring Robert's timer functionailty from an overlapping call every frame to a delay timer coroutean style timed behaviour.  
+
 *Original spawner timer*  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Refactor%20spawn%20timer.PNG "Refactored spawner timer")
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Original%20spawner%20timer.PNG "Original spawner timer")
 *Refactored spawner timer*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Refactor%20spawn%20timer.PNG "Refactored spawner timer")
 
 ### Water block
 A translucent cuboid which ignores collisions with the player but produces a physical force upon the 'floating blocks' Blueprint. When it detects a 'hit' collision from the water element projectile the scale of the block increased over a period of time using a timeline node to animate the transformation over a number of frames. The reverse behaviour is performed with a succesful raycast during a water subtract attempt by the player.  
 
 The image below shows the set of nodes which enable water to be added. This Blueprint originally made use of tics and a boolian check in order to drive the gradual change of scale, however, this was refactored to use the timeline node which made the transformation much more stable and predictable.  
-![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Water%20IO%20Add.PNG "Water block Add water section of Blueprint")
+
 *Water block add water section of Blueprint*  
+![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Water%20IO%20Add.PNG "Water block Add water section of Blueprint")
 
 ### Teleporter
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Teleporter.PNG "")
