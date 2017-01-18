@@ -64,7 +64,7 @@ The project is thus building a *"Temple of Elements"*, hence the so-called worki
 ## Production Overview
 
 ### Communication
-The team was keep to simulate, as far as practical, a working example of a industry small-team production approach. We held extensive design and planning meetings throughout early stages of the project (see sample whiteboard photos below) and then followed up on these with a mixture of in studio working days and remote conference calls / screen share programming and design sessions via Google Hangouts (hangouts.google.com).
+The team aimed to simulate, as far as practical, a working example of a industry style, small-team production approach. We held extensive design and planning meetings throughout early stages of the project (see sample whiteboard photos below) and then followed up on these with a mixture of in-studio working days and remote conference calls / screen share, programming and design sessions via Google Hangouts (hangouts.google.com).
 
 *White board designs Nov 2016*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/whiteboards/2016_11_11_B.jpg "White board designs Nov 2016")
@@ -99,14 +99,16 @@ As someone with a background in design, we found that I was well suited to filli
 
 Robert and I worked in a highly collaborative pattern, initially we had several sessions where we worked simultaneously on more complex blueprints - this was crucial to our unpicking and self-learning of the Unreal Blueprint system. We were often able to 'fill in the blanks' for areas we had independently discovered while experimenting on our own smaller tasks. During later stages we would often consult or 'Rubber Duck' for each other while jointly working in the university lab. Many of the Blueprints have traces of each of us establishing, augmenting or debugging functionality.
 
-In several cases, Robert and I would also be assisting Pablo to understand how to amend of finish a particular Blueprint he was constructing. I also spent time breaking down the construction of Blueprints and using timeline nodes with Max. Through this process he was able to learn how to construct the triggerable bridge that self assembles and to sequence the lighting of various torches.
+In several cases, Robert and I would also be assisting Pablo to understand how to amend of finish a particular Blueprint he was constructing. I also spent time breaking down the construction of Blueprints and using timeline nodes with Max. Through this process he was able to learn how to construct the triggerable bridge pieces that self assemble and to sequence the lighting of various torches.
 
 My work with Pablo initially was focused on high level design. Feasibility and project planning were consistently part of our thought cycle and so there was significant interplay of our pool of design and technical knowledge. Later in the project I would collaborate with Pablo on the level design, often mocking up a quick build of a Blueprint feature so that we could test out an idea on the fly.
 
 --------------------------------------------------------------------------------
 ## Technical Overview
 
-As has been mentioned, the Blueprint system was new to all of the members of the team. Consequently, the ambitiousness of our project had to be controlled within the scope of what were able to achieve. This visual programming system used within Unreal brought with it a number of notable benefits and problems:
+As mentioned earlier, the Blueprint system was new to all of the members of the team. Consequently, we quickly recognised that the most prudent approach was to control the scope of our project. Our target was something that we would both be able to achieve but also feel confident that we would be able to polish to a reasonable level of presentational quality. The intention was that this should become a valuable piece for our portfolio.
+
+The visual programming system used within Unreal brought with it a number of notable benefits and problems:
 
 ***Pros***  
 - Easy for the artists to pick up in comparison to the abstract and syntax barrier of code.  
@@ -116,18 +118,18 @@ As has been mentioned, the Blueprint system was new to all of the members of the
 
 ***Cons***  
 
-- Needing to learn how Unreal BPs 'think' and how the designers planned for the framework to be used.  
+- Needing to learn how Unreal Blueprints 'think' and how the designers planned for the framework to be used.  
   - Not always in the way that seemed intuitive.  
   - Some strange names such as Branch for an If statement.  
   - The settings for a node or variable are often hidden in side menus or non obvious sub windows - so a challenge for the programmers to locate when they know it 'should be here somewhere', becomes an oblivious option to the artists.  
 
-- Most variables are public by default making un-encapsulated code attractive in the moment (particularly as encapsulated BPs are considerably harder to write)  
-  - Clunkyness preventing easy encapsulation leads to artists making duplicate blueprints for minor changes in BP behaviour. As each blueprint is essentially it's own class, this leads to many many headaches when checking types, changing shared functions, defining  variables of a specific class instance etc.  
+- Most variables are public by default making un-encapsulated code attractive in the moment (particularly as encapsulated Blueprints are considerably harder to write)  
+  - Clunkyness preventing easy encapsulation leads to artists making duplicate Blueprints for minor changes in Blueprint behaviour. As each Blueprint is essentially it's own class, this leads to many many headaches when checking types, changing shared functions, defining  variables of a specific class instance etc.  
 
-- Just getting a thing working at the start left us with a legacy of early blueprints that were substandard. We refactored important ones as and when we had time, but there are still some remaining.  
+- Just getting a thing working at the start left us with a legacy of early Blueprints that were substandard. We refactored important ones as and when we had time, but there are still some remaining.  
   - The next 'cycle' if this were a long term development would definitely be a 'tock' stability focus, otherwise we would drown in 'patchwork fixes'.  
 
-- While using fewer instances of the same thing in a graph feels more intuitively correct, actually in practice it just leaves you with snaking wires and so it ends up better to replace these with multiple 'gets' to feed equivalent inputs - but this leaves more visual 'unit' clutter on the graph. A BP programmer has to decide which is the lesser of two evils, more nodes or more wire spaghetti. On the whole we found it was easier for someone else to read the code with repeated nodes but easier to modify without leaving overlooked variable instances with the single variables wired to multiple locations.  
+- While using fewer instances of the same variable node in a graph feels more intuitively correct, actually in practice it just leaves you with snaking wires. Thus, it ends up preferable to replace these with multiple 'gets' to feed equivalent inputs - however, this leaves more visual 'unit' clutter on the graph. A Blueprint programmer has to decide which is the lesser of two evils, more nodes or more wire spaghetti. On the whole we found it was easier for someone else to read the code with repeated nodes but easier to modify without leaving overlooked variable instances with the single variables wired to multiple locations.  
 
 ## Blueprint Descriptions
 
@@ -138,7 +140,7 @@ The triggerable object class was one of the most interesting, functional and ess
 
 The base class has only one function header the 'Triggerable Event'. But by inheriting this function the class abstracted each triggerable object's behaviour into a single common call that could be made by any corresponding trigger. i.e. A lever trigger, does not need to know what will happen when it calls the triggerable event on its array of triggerable objects, nor does it need to even know what type of triggerable object they are.
 
-This trigger - triggerable pairing meant that the artists had a variety of objects to mix and match to form relatively sophisticated puzzles from the kit of objects at their disposal and required less programmer assistance to make functional each new gameplay puzzle idea. 
+This trigger <-> triggerable pairing meant that the artists had a variety of objects to mix and match to form relatively sophisticated puzzles from the kit of objects at their disposal and required less programmer assistance to make functional each new gameplay puzzle idea. 
 
 *A range of triggerable object Blueprints available to the artists*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20event.PNG "Triggerable event")
@@ -146,6 +148,8 @@ This trigger - triggerable pairing meant that the artists had a variety of objec
   
   
 ***Lever*** *(Trigger)*  
+Originally a simple blueprint created by Pablo that I assisted with bug fixing for a specific use case (see ‘early example’ image below).
+
 *Early example of the lever class*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Early%20lever.PNG "Early example of the lever class")
 *Lever class after refactoring and additional functionality*  
@@ -153,7 +157,9 @@ This trigger - triggerable pairing meant that the artists had a variety of objec
   
   
 ***Lightable torch / brazier*** *(Trigger & Triggerable)*  
-Working as both a trigger and a triggerable object, the torch can run the triggerable event on each object in either of two arrays attached to it - one for being lit and one for being extinguished. It can also be remotely lit / extinguished with the option to ignore array processing if the designer choses to do so. The torch can be set to switch to lit or unlit as the game loads, so that puzzles can be setup in specific combinations.  
+Working as both a trigger and a triggerable object, the torch can loop through the trigger functions of the objects in either of the two arrays attached to it - one for being lit and one for being extinguished. These arrays are exposed to the artists via the in-editor inspector panel and can be filled from a simple drop down which displays all valid object instances in the scene.
+
+The torch can also be remotely lit / extinguished with the option to ignore array processing if the designer choses to do so. It can also be set to an initial lit or unlit state, which it switches to as the game loads - this enables puzzles to be setup in specific combinations.  
 
 *Triggerable trigger torch and editor exposed array variables for artists*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20trigger%20torch%20vars.PNG "Triggerable trigger torch")
@@ -165,6 +171,10 @@ Working as both a trigger and a triggerable object, the torch can run the trigge
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20door.PNG "Triggerable door Blueprint")  
 
 ### Customised events for the Tutorial Room ###
+Within the tutorial room space, multiple ‘storytelling’ features that were unique to this space were required, in order to demonstrate a few core game behaviours to the player. The glove (“Triggerable EDIT” [Element Device for Inducing Transference]) found at the centre of the room acted as the holder for these custom events.
+
+The room is intended to communicate the link between elements being stored and released from crystals held by the glove; the use of levers; torch lighting and that these can trigger features such as doors and rising floors; the presence of traps; destruction of stone pots; and have the initial quests from the temple spirit’s voice.
+
 *Storytelling custom Blueprint for tutorial room*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20EDIT.PNG "Storytelling custom Blueprint for tutorial room")
 
@@ -172,7 +182,7 @@ Working as both a trigger and a triggerable object, the torch can run the trigge
 Robert initially modified the standard first person controller from the Unreal starter pack, maintaining basic movement and camera control. Following this we regularly worked in tandem on various functions, this became our most complex Blueprint with a variety of functions growing within it. I will describe the most interesting examples for which I had significant responsibility:  
 
 **Add / subtract element system**  
-This section of the Blueprint underwent significant revisions and additions over the course of the project. Evolving as the requirements for our players interactions and capabilities were modified.  
+This section of the Blueprint underwent significant revisions and additions over the course of the project. Evolving alongside the iteration of requirements for our players interactions and elemental capabilities.  
 
 *Early version of the element IO system*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/player_blueprints/element_IO_earlier_version.png "Early version of the element IO system")  
@@ -207,7 +217,7 @@ This section of the Blueprint underwent significant revisions and additions over
 - Adds a new crystal to the player's stock of the relevant type.
 - Finally a short cooldown is set to prevent accidental spamming of the power. 
 
-In the case of both the Add and Subtract, with further development of the project, some of the shared behaviours on each element's path could be wrapped up into separate function graphs to avoid duplication (such as the crystal array incrementing and decrementing).
+In the case of both the Add and Subtract, with further development of the project, several of the shared behaviours on each element's path could be wrapped up into separate function graphs to avoid aspects of duplication (such as the crystal array incrementing and decrementing). However, during development it was important to keep each of the three tracks independent as the order of different nodes was interrupted or adjusted for the particular requirements of each effect.  
 
 **Aimed object detection**  
 Raycast function checks for collision with specifically tagged objects, informing the UI class of points of interest to display to the player informational graphics.  
@@ -216,10 +226,14 @@ Raycast function checks for collision with specifically tagged objects, informin
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Raycast%20check%20function.PNG "Raycast checking and resolution")
 
 ### Moving Trap Wall
+This was another Blueprint that Pablo initially setup with a basic timeline node. I firstly adapted the system to allow for variable speed and independent positioning within the world. Later this was transformed into a triggerable Blueprint to work with the torch and lever puzzle.  
+
 *Moving trap wall*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Moving%20walls.PNG "Moving trap wall")
 
 ### Floating Air Block
+Platforms which are constrained to move along a single axis. They react to Air I/O element effects, with a timeline lerp interval movement applied forwards or backwards. The movement has a maximum and minimum position value which is editable by the artists via the inspector.  
+
 *Air element push and pull floating block*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Floating%20air%20block.PNG "Air element push and pull floating block")
 
@@ -240,4 +254,6 @@ The image below shows the set of nodes which enable water to be added. This Blue
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Water%20IO%20Add.PNG "Water block Add water section of Blueprint")
 
 ### Teleporter
+This is a two part object with the main teleporter object referencing a separately movable destination pad which the artists could position anywhere in the world. This Blueprint was not used in the final game, however, I repurposed the node structure to create the teleporting effect of picking up the quest keystones. This revised Blueprint also separated the destination into its own object which had a directional aspect to specify the direction the player should face after teleporting.  
+
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Teleporter.PNG "Teleporter Blueprint")
