@@ -92,16 +92,42 @@ The elemental spawner just fire spawn a projectile which then is destroyed on co
 
 ## Pick ups
 
+The items that you could pick up in the levels followed the same format as the example screenshot. The logic of this blueprint is shown below using pusedo code. 
+	
+	- When an object hits the object
+	- Cast to first person character 
+	- if cast worked
+	- Then as the player 
+		- add health
+		- Play a 2D sound
+		- Destroy the actor. 
+		
+These logic was applied to the Health and also the Crystals. 
 ![Health Pick Up Blueprint](blueprint_screenshots/pick_ups/health_pick_blueprint.jpg)
-
-###Health potion pick up 
-###Generic Crystal Pick up
 
 ## Destructible crystal urn 
 
+The destructible objects that are in the scene use the Unreal engine tool which allows you to create a destructable mesh from any model that has been imported into Unreal. When this blueprint was first implemented, we did not have a full understanding of how the damage system works with the destructable mesh. This system is has a lot of loading overhead, however in future updates this would be one mesh which on damage splits into parts. 
+
+An explation of how this blueprint works in below. 
+
+	- When the inital mesh is hit
+	- Check to see what object has collided
+	- If it is a fire projectile
+	- Then 
+		- spawn destructable mesh 
+		- Play a sound
+		- Spawn an item (Crystal or health) 
+		- Destroy the old mesh 
+
+$$$$$$$$$$$$$$$$$$$$$$$ Link to destructable screen shot image 
+
 ## player respawn checkpoints 
 
-# Team Mechanics
+The players respawn were using the standard Unreal level reload function, however the design of the level meant that we couldnt use it without having loading screen after every save point. So a custom event handler was created within the player. Checkpoint variables were created for location and amount of crystals the player has. When the player overlaps a checkpoint these variables were updated with the current state. So when the player dies it calls a reset function instead of reloading the level. The event for dying disable the players input and displayed a visual overlay so that it was sudden and unclear as why they are teleporting back to the checkpoints.
 
+
+
+## Room Reseters
 
 
