@@ -1,6 +1,10 @@
 # Introduction to Programming 2016 - Assignment 2  
 # Matthew Duddington
 
+[![Telement YouTube video link](https://img.youtube.com/vi/TAAxgB051rc/0.jpg)](https://www.youtube.com/watch?v=TAAxgB051rc)
+
+Project video: www.youtube.com/watch?v=TAAxgB051rc
+
 --------------------------------------------------------------------------------
 ## Team
 
@@ -148,7 +152,7 @@ This trigger <-> triggerable pairing meant that the artists had a variety of obj
   
   
 ***Lever*** *(Trigger)*  
-Originally a simple blueprint created by Pablo that I assisted with bug fixing for a specific use case (see ‘early example’ image below).
+Originally a simple blueprint created by Pablo that I assisted with bug fixing for a specific use case (see Â‘early exampleÂ’ image below).
 
 *Early example of the lever class*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Early%20lever.PNG "Early example of the lever class")
@@ -171,9 +175,9 @@ The torch can also be remotely lit / extinguished with the option to ignore arra
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20door.PNG "Triggerable door Blueprint")  
 
 ### Customised events for the Tutorial Room ###
-Within the tutorial room space, multiple ‘storytelling’ features that were unique to this space were required, in order to demonstrate a few core game behaviours to the player. The glove (“Triggerable EDIT” [Element Device for Inducing Transference]) found at the centre of the room acted as the holder for these custom events.
+Within the tutorial room space, multiple Â‘storytellingÂ’ features that were unique to this space were required, in order to demonstrate a few core game behaviours to the player. The glove (Â“Triggerable EDITÂ” [Element Device for Inducing Transference]) found at the centre of the room acted as the holder for these custom events.
 
-The room is intended to communicate the link between elements being stored and released from crystals held by the glove; the use of levers; torch lighting and that these can trigger features such as doors and rising floors; the presence of traps; destruction of stone pots; and have the initial quests from the temple spirit’s voice.
+The room is intended to communicate the link between elements being stored and released from crystals held by the glove; the use of levers; torch lighting and that these can trigger features such as doors and rising floors; the presence of traps; destruction of stone pots; and have the initial quests from the temple spiritÂ’s voice.
 
 *Storytelling custom Blueprint for tutorial room*  
 ![alt text](https://github.com/robertjdoig/telement/blob/master/blueprint_screenshots/Matthew/Triggerable%20EDIT.PNG "Storytelling custom Blueprint for tutorial room")
